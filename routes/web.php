@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\RoomController;
 use App\Http\Controllers\ThemeController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,22 @@ Route::controller(ThemeController::class)->name("home.")->group(function(){
 });
 
 Route::get('/home',[AdminController::class,'index'])->name('home');
+
+
+
+
+
+
+Route::controller(RoomController::class)->name("room.")->group(function(){
+    Route::get('/index','index')->name('index');
+
+    // Route::post('/store','store')->name('store');
+    Route::get('/show','show')->name('show');
+    Route::get('/category/{id}','category')->name('category');
+
+
+});
+
 
 
 

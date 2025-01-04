@@ -10,6 +10,8 @@
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="{{asset('admin')}}/vendor/bootstrap/css/bootstrap.min.css">
+    @vite(['resources/css/app.css','resources/js/app.js'])
+
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="{{asset('admin')}}/vendor/font-awesome/css/font-awesome.min.css">
     <!-- Custom Font Icons CSS-->

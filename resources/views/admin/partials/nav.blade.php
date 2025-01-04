@@ -10,21 +10,19 @@
     <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
     <ul class="list-unstyled">
             <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
-            <li><a href="tables.html"> <i class="icon-grid"></i>Tables </a></li>
-            <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
-            <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
-            <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Example dropdown </a>
-              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                <li><a href="#">Page</a></li>
-                <li><a href="#">Page</a></li>
-                <li><a href="#">Page</a></li>
-              </ul>
+
+
+
+
+            <li class="dropdown">
+              <a class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="icon-windows"></i>Hotel Rooms
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="{{ route('room.index') }}">Add Room</a>
+                <a class="dropdown-item" href="{{ route('room.show') }}">View Rooms</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
-            <li><a href="login.html"> <i class="icon-logout"></i>Login page </a></li>
-    </ul><span class="heading">Extras</span>
-    <ul class="list-unstyled">
-      <li> <a href="#"> <i class="icon-settings"></i>Demo </a></li>
-      <li> <a href="#"> <i class="icon-writing-whiteboard"></i>Demo </a></li>
-      <li> <a href="#"> <i class="icon-chart"></i>Demo </a></li>
-    </ul>
+
   </nav>
