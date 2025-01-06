@@ -8,4 +8,19 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-});
+
+    build: {
+        manifest: true,  // This option generates the manifest.json file
+        outDir: 'public/build',  // Make sure this matches your target directory
+      }
+}
+
+
+
+
+);
+
+
+
+
+

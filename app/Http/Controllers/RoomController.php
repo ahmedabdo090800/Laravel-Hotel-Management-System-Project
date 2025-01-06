@@ -31,7 +31,7 @@ class RoomController extends Controller
     {
 
         $data=new Room();
-        				
+
         $data->room_title=$request->title_room;
         $data->description=$request->description;
         $data->room_type=$request->room_type;
@@ -42,7 +42,7 @@ class RoomController extends Controller
 
 
 if($image){
-    $newImage=time().'.'.$image->getClientOriginnalExtension();
+    $newImage=time().'.'.$image->getClientOriginalExtension();
     $request->image->move('room',$newImage);
     $data->image=$newImage;
 
@@ -50,7 +50,7 @@ if($image){
         $data ->save();
         return back()->with('status-message','The Room is Added Successfully');
         // $data=$request->validated();
-        
+
         // Room::create($data);
     }
 
